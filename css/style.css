@@ -47,8 +47,11 @@ a {
   border-radius: 7px;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+  transition: all 0.3s ease;
 }
-
+.primary-btn:hover {
+  background-color: var(--light-red);
+}
 .col-7 {
   width: calc(8.33% * 7);
   padding: 0 15px;
@@ -102,6 +105,7 @@ a {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: var(--blue);
+  transition: all 0.3s ease;
 }
 .nav-links:hover,
 .active {
@@ -145,9 +149,10 @@ a {
 .banner-btn > .primary-btn {
   background-color: var(--light-red);
   padding: 18.5px 36.5px;
+  transition: all 0.3s ease;
 }
 .banner-btn > .primary-btn:hover {
-  background: var(--deep-red);
+  background: var(--blue);
 }
 /* ==============* col-5 *============ */
 .form-wrapper {
@@ -189,6 +194,7 @@ textarea {
   font-size: 15px;
   outline: none;
   margin-bottom: 20px;
+  transition: all 0.3s ease;
 }
 
 textarea {
@@ -211,10 +217,11 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background: var(--deep-red);
+  background: var(--blue);
 }
 /* ==============* About section *============ */
 .about-sec {
@@ -241,10 +248,11 @@ button:hover {
 }
 .about-btn {
   margin-top: 37px;
+  transition: all 0.3s ease;
 }
 
 .about-btn > .primary-btn:hover {
-  background: var(--deep-red);
+  background: var(--light-red);
 }
 /* ==============* Product section *============ */
 
@@ -268,6 +276,12 @@ button:hover {
   background: var(--white);
   border-radius: 20px;
   padding: 15px 15px 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
 }
 .title-4 {
   font-family: "Inter", sans-serif;
