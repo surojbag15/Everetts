@@ -318,7 +318,7 @@ button:hover {
 
 /* ==============* Footer section *============ */
 .footer-sec {
-  background: url(../asset/footer-img.png);
+  background: url("../asset/footer-img.png");
   min-height: 264px;
   width: 100%;
 }
