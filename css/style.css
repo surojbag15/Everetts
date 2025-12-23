@@ -177,14 +177,13 @@ form {
   display: flex;
 }
 
-.form-row input:first-child {
-  margin-right: 20px;
-}
+
 
 input,
 textarea {
   width: 100%;
   padding: 14px 15px;
+  box-sizing: border-box;
   border: 1px solid #b8b8b8;
   color: #afafaf;
   border-radius: 5px;
