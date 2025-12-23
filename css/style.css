@@ -327,6 +327,11 @@ button:hover {
   margin-top: 60px;
 }
 
+.footer-text {
+  color: var(--white);
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
 .privacy {
   position: relative;
   margin-left: 20px;
