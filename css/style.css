@@ -115,6 +115,9 @@ a {
   margin-top: 0;
 }
 
+.menu {
+  display: none;
+}
 /* ==============* Banner section *============ */
 
 /* ==============* col-7 *============ */
@@ -176,8 +179,6 @@ form {
 .form-row {
   display: flex;
 }
-
-
 
 input,
 textarea {
@@ -277,7 +278,9 @@ button:hover {
   background: var(--white);
   border-radius: 20px;
   padding: 15px 15px 40px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   cursor: pointer;
 }
 .card:hover {
@@ -353,4 +356,106 @@ button:hover {
 }
 .lending:hover {
   text-decoration: underline;
+}
+
+/* ================= MEDIA SCREEN ================= */
+
+@media screen and (max-width: 991px) {
+  .col-7,
+  .col-6,
+  .col-5,
+  .col-4 {
+    width: 100%;
+  }
+  .banner-sec {
+    padding: 15px 0;
+  }
+
+  .navbar-collapsed {
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+    color: black;
+    margin-left: auto;
+  }
+  .title-1 {
+    font-size: 64px;
+    text-align: center;
+  }
+  .title-4 {
+    text-align: center;
+  }
+  .banner-content p {
+    text-align: center;
+  }
+
+  .banner-btn {
+    text-align: center;
+  }
+
+  .form-wrapper {
+    margin-top: 40px;
+  }
+
+  .about-content {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .about-img {
+    max-width: 100%;
+  }
+  .card {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .title-1 {
+    font-size: 42px;
+  }
+
+  .title-2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .title-3 {
+    font-size: 18px;
+  }
+
+  .title-4 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .primary-btn {
+    padding: 14px 22px;
+    font-size: 16px;
+  }
+
+  .nav-logo img {
+    max-width: 140px;
+  }
+
+  .nav-btn {
+    margin-top: 15px;
+  }
+
+  .footer-text,
+  .lending,
+  .privacy {
+    font-size: 14px;
+  }
+  .privacy {
+    position: relative;
+    margin-top: 15px;
+    margin-left: 0;
+    padding-left: 20px;
+    color: var(--white);
+  }
+  .footer-logo img {
+    max-width: 140px;
+  }
 }
